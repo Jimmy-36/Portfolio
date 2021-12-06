@@ -1,0 +1,51 @@
+/* This rule is to set the navigation bar */
+ul{
+    list-style: none;
+    margin: 0%;
+    padding:0%;
+    overflow: hidden;
+    background-color: grey;
+}
+/* this rule defines the elements to align to left*/
+li{
+    float: left;
+    border-right:1px solid black;
+}
+/*this rule is to set the border in the navigation bar*/
+li:last-child{
+    border-right:none;
+}
+/* to display the hover color as blue and text color as white*/
+li a:hover{
+    color:white; 
+    background-color: blue;
+}
+li a
+{
+    display:block;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+body {
+    font-family: "Arial", sans-serif;
+}
+section {
+    text-align: center;
+}
+.game--container {
+    display: grid;
+    grid-template-columns: repeat(3, auto);
+    width: 306px;
+    margin: 50px auto;
+}
+.cell {
+    font-family: "Permanent Marker", cursive;
+    width: 100px;
+    height: 100px;
+    box-shadow: 0 0 0 1px #333333;
+    border: 1px solid #333333;
+    cursor: pointer;
+line-height: 100px;
+    font-size: 60px;
+}
