@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--this is my home page-->
+    <title>Education and Qualifications</title>
+    <style>
+        /* this rule is to set the style for table in the webpage */
+
+        /* This rule is to set the navigation bar */
+        ul
+        {
+            list-style: none;
+            margin: 0%;
+            padding:0%;
+            overflow: hidden;
+            background-color:grey;
+        }
+        /* this rule defines the elements to align to left*/
+        li
+        {
+            float: left;
+            border-right:1px solid black;
+        }
+        /*this rule is to set the border in the navigation bar*/
+        li:last-child{
+            border-right:none;
+        }
+        /* to display the hover color as blue and text color as white*/
+        li a:hover
+        {
+            color:white; 
+            background-color: blue;
+        }
+        h1
+        {
+            /*aligining the header 1 to center and setting the color to green*/
+            text-align: center;
+            text-transform: uppercase;
+            background-color: grey;
+        }
+        /*setting the style for paragraph*/
+        p
+        {
+            text-indent: 50px;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-size: 20px;
+            font-style:normal;
+            font-family: 'Times New Roman';
+        }
+        li a
+        {
+            display:block;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        table, th { /*the table can be used to display the education qualifications*/
+        border: 2px solid black;
+        }
+        td{
+            border:2px solid black;
+            font-family: 'Times New Roman', Times, serif;
+            font-size: large;
+        }
+        table{
+        border-collapse: collapse;
+        width: 800px;
+        }
+        th{
+        height:40px;
+        vertical-align: bottom;
+        }
+        input[type=text]{
+            margin-top: -378px;
+            margin-right: 100px; 
+            width:200px;
+            box-sizing: border-box;
+            border:2px red;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("C:/Users/Ofelia/Desktop/Search.png");
+            background-position: 5px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+        #frame {
+            position: absolute;
+            top: 370px;
+            bottom: 0px;
+            right: 0px;
+            left: 400px;
+            width: 500px;
+            height: 300px;
+            background-color:silver;
+        }
+    </style>
+<body>
+    <ul>
+        <li> <a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\homepage.html">Home</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\qualifications.html">Qualifications</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\projects.html">Projects</a></li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\aboutme.html">About me</a></li>
+    </ul>
+    <div>
+        <h1>Education and Qualifications</h1>
+        <p style="text-align:center">This is a list of all my current and past education experiences</p>
+    </div>
+    <table style="margin-left:auto;margin-right:auto;"> 
+        <tr>
+            <th>Education level</th>
+            <th>Degree</th>
+            <th>Location</th>
+            <th>Date </th>
+        </tr>
+        <tr>
+            <td>Community College</td>
+            <td>Assosiates' in Liberal arts</td>
+            <td>Northeast Lakeview College</td>
+            <td>2016 - 2020</td>
+        </tr>
+        <tr>
+            <td>High School</td>
+            <td>Distinguished High School Diploma</td>
+            <td>Judson Early College Academy</td>
+            <td>2016 - 2020</td>
+        </tr>
+        <tr>
+            <td>University</td>
+            <td>Bachelors' of Science in Computer Information Systems</td>
+            <td>University of the Incarnate Word</td>
+            <td>2020-current</td>
+        </tr>
+    </table>
+    <div id = "frame">
+        <h1>Preffered programming languages</h1>
+        <p>C++ - Programming Languages II <img src="C:\Users\Ofelia\Desktop\HTML\Website\C++ Logo.png"></p> 
+        <p>Python - Scripting Languages <img src="C:\Users\Ofelia\Desktop\HTML\Website\Python Logo.png"></p>
+    <!-- <form>
+        <input style="float: right;" type="text" name="Search" placeholder="Search...">
+    </form> -->
+</body>
+</html>

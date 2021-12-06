@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--this is my home page-->
+    <title>About Me Page</title>
+    <style>
+        /* this rule is to set the style for table in the webpage */
+
+        /* This rule is to set the navigation bar */
+        ul
+        {
+            list-style: none;
+            margin: 0%;
+            padding:0%;
+            overflow: hidden;
+            background-color: grey;
+        }
+        /* this rule defines the elements to align to left*/
+        li
+        {
+            float: left;
+            border-right:1px solid black;
+        }
+        /*this rule is to set the border in the navigation bar*/
+        li:last-child{
+            border-right:none;
+        }
+        /* to display the hover color as blue and text color as white*/
+        li a:hover
+        {
+            color:white; 
+            background-color: blue;
+        }
+        h1
+        {
+            /*aligining the header 1 to center and setting the color to green*/
+            text-align: center;
+            text-transform: uppercase;
+            background-color: grey;
+        }
+        /*setting the style for paragraph*/
+        p
+        {
+            text-indent: 35px;
+            letter-spacing: 1px;
+            text-align: left;
+            font-size: 20px;
+            font-style:normal;
+            font-family: 'Times New Roman';
+        }
+        li a
+        {
+            display:block;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        table, td, th { /*the table can be used to display the education qualifications*/
+        border: 2px solid black;
+        }
+        table{
+        border-collapse: collapse;
+        width: 100px;
+        }
+        th{
+        height:50px;
+        vertical-align: bottom;
+        }
+        input[type=text]{
+            margin-top: -285px;
+            margin-right: 100px;
+            width:200px;
+            box-sizing: border-box;
+            border:2px red;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("C:/Users/Ofelia/Desktop/Search.png");
+            background-position: 5px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+        /*this is the rule for defining profile picture*/
+        div.logo{/*positioning my logo on the webpage*/
+            /* display: inline; */
+            vertical-align: left;
+            margin-left: 200px;
+        }
+        /* adding the rule for footer section of the webpage*/
+        footer{
+            background-color: #bbb;
+            padding:10px;
+            text-align: center;
+            color: black;
+        }
+        /*rule for defining the article*/
+        article{
+            float: center;
+            padding: 20px;
+            width: auto;
+            background: #bbb;
+            height: 220px;
+            /*display: inline;*/ /*can not use inline with float center*/
+        }
+        section::after{
+            content: "";
+            display: table;
+            clear:both;
+
+        }
+        div.logo-text { /* Position text within site-branding */
+            position: absolute;
+            top: 351px;
+            /* display: inline-block; */
+            width: 380px;
+            margin: auto;
+            vertical-align: right;}
+        #frame {
+            position: absolute;
+            top: 55px;
+            bottom: 0px;
+            right: 200px;
+            width: 500px;
+            height: 241px;
+            background-color: #bbb;
+            
+        }
+        #frame2 {
+            position: absolute;
+            top: 350px;
+            bottom: 20px;
+            right: 200px;
+            width: 500px;
+            height: 241px;
+            background-color: #bbb;
+            
+        }
+        #frame3{
+            position: absolute;
+            top: 350px;
+            bottom: 20px;
+            left: 100px;
+            width: 500px;
+            height: 241px;
+            background-color: #bbb;
+        }
+        .button{
+            background-color: #00aefe;
+            border:none;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+.button1{
+    background-color:silver;
+    border: 1px solid;
+    border-color: solid black;
+
+}
+.button:hover{
+    color: white;
+    background-color: teal;
+}
+    </style>
+<body>
+    <ul>
+             <li> <a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\homepage.html">Home</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\qualifications.html">Qualifications</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\projects.html">Projects</a></li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\aboutme.html">About me</a></li>
+    </ul>
+    <div class="logo">
+        <img src="C:\Users\Ofelia\Desktop\HTML\Website\blank-profile-picture-973460_1280.png" style = "float: left; height: 250px; border:2px solid black;" alt= "Profile Picture">
+    <div>
+        <h1 style="float:left; position: relative;left: x; top: 23px;"> </h1>
+    </div>
+    <div id="frame">
+        <h1>Hobbies and Interests</h1>
+        <p>
+            Video games, learning new languages, watching YouTube videos.</p>
+    </div>
+    <div id="frame2">
+        <h1>Contact Information</h1>
+        <p>Email: Jimmy@gmail.com</p>
+        <p>Phone: 210-555-555</p>
+        <p>Current Residence: San Antonio</p>
+    </div>
+    <div id="frame3">
+        <h1>About me</h1>
+        <p>My name is Jimmy Aragon, and I am a current student at UIW, pursuing a bacheolor's degree in CIS
+             with a concentration in programming.</p>
+        <a href="C:\Users\Ofelia\Desktop\HTML\Website\SAMPLE RESUME.docx">
+            <button class="button button1">Resume</button></a>
+    </div>
+    <!-- <div class="logo-text">
+        <section>
+        <article>
+            <h1 id="site-title">About me</h1>
+            <p>My name is Jimmy Aragon, and I am a current student at UIW, pursuing a bacheolor's degree in CIS
+             with a concentration in programming.</p>
+        <a href="C:\Users\Ofelia\Desktop\HTML\Website\SAMPLE RESUME.docx">
+            <button class="button button1">Resume</button></a>
+        </article>
+        </section>
+    </div> -->
+    <!-- <form>
+        <input style="float: right;" type="text" name="Search" placeholder="Search..."> -->
+    <!--</form>
+    <section>
+    <footer>
+        <a>This is sample footer txt to display on my web page</a>
+    </footer>   
+    </section>-->
+</body>
+</html>

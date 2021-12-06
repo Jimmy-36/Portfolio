@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--this is my home page-->
+    <title>Projects Page</title>
+    <style>
+        /* this rule is to set the style for table in the webpage */
+
+        /* This rule is to set the navigation bar */
+        ul
+        {
+            list-style: none;
+            margin: 0%;
+            padding:0%;
+            overflow: hidden;
+            background-color: grey;
+        }
+        /* this rule defines the elements to align to left*/
+        li
+        {
+            float: left;
+            border-right:1px solid black;
+        }
+        /*this rule is to set the border in the navigation bar*/
+        li:last-child{
+            border-right:none;
+        }
+        /* to display the hover color as blue and text color as white*/
+        li a:hover
+        {
+            color:white; 
+            background-color: blue;
+        }
+        h1
+        {
+            /*aligining the header 1 to center and setting the color to green*/
+            text-align: center;
+            text-transform: uppercase;
+            background-color: grey;
+        }
+        /*setting the style for paragraph*/
+        p
+        {
+            text-indent: 25px;
+            letter-spacing: 1px;
+            text-align: center;
+            font-size: 20px;
+            font-style:normal;
+            font-family: 'Times New Roman';
+        }
+        li a
+        {
+            display:block;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        table, td, th { /*the table can be used to display the education qualifications*/
+        border: 2px solid black;
+        }
+        table{
+        border-collapse: collapse;
+        width: 100px;
+        }
+        th{
+        height:50px;
+        vertical-align: bottom;
+        }
+        input[type=text]{
+            margin-top: -375px;
+            margin-right: 28px;
+            width:200px;
+            box-sizing: border-box;
+            border:2px red;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("C:/Users/Ofelia/Desktop/Search.png");
+            background-position: 5px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+        #frame {
+            position: absolute;
+            top: 250px;
+            bottom: 0px;
+            right: 80px;
+            width: 500px;
+            height: 300px;
+            background-color:silver;
+        }
+        #frame2 {
+            position: absolute;
+            top: 0px;
+            bottom: 0px;
+            right: 700px;
+            width: 500px;
+            height: 300px;
+            background-color:silver;
+        }
+        .button{
+            background-color: #00aefe;
+            border:none;
+            padding: 16px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+            font-family: 'Times New Roman', Times, serif;
+            cursor: pointer;
+        }
+.button1{
+    background-color:silver;
+    border: 1px solid;
+    border-color: solid black;
+}
+.button:hover{
+    color: white;
+    background-color: teal;
+}
+
+</style>
+<body>
+    <ul>
+        <li> <a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\homepage.html">Home</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\qualifications.html">Qualifications</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\projects.html">Projects</a></li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\aboutme.html">About me</a></li>
+    </ul>
+    <div>
+        <h1>Projects</h1>
+    </div>
+    <p>
+        This page is to list all of my complete and current projects.
+    </p>
+    <div id = "frame">
+        <h1>Javascript and HTML projects</h1>
+        <p>Click the buttons below to look at various different projects using HTML and Javascript</p>
+        <a href="C:\Users\Ofelia\Desktop\HTML\Calculator\Calmain.html" class="button button1">Calculator</a>
+        <a href="C:\Users\Ofelia\Desktop\HTML\TicTacToe\main_tictactoe.html" class="button button1">TicTacToe</a>
+    <div id = "frame2">
+        <h1>C++ Programs</h1>
+        <p>Click the buttons below to view a few C++ programs 
+            </p>
+        <a href="C:\Users\Ofelia\Desktop\C++\inheritanceMulti.cpp">
+            <button class="button button1">Inheritance</button></a>
+        <a href="C:\Users\Ofelia\Desktop\C++\polymorphism\polymorphism.3.cpp">
+            <button class="button button1">Virtual Function</button></a>
+        <a href="C:\Users\Ofelia\Desktop\C++\polymorphism\polymorphism.2.cpp">
+            <button class="button button1">Function Overloading</button></a>
+    </div>
+    <!-- <form>
+        <input style="float: right;" type="text" name="Search" placeholder="Search...">
+    </form> -->
+</body>
+</html>

@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!--this is my home page-->
+    <title>My Portfolio</title>
+    <style>
+        /* this rule is to set the style for table in the webpage */
+
+        /* This rule is to set the navigation bar */
+        ul
+        {
+            list-style: none;
+            margin:0%;
+            padding:0%;
+            overflow: hidden;
+            background-color: grey;
+        }
+        /* this rule defines the elements to align to left*/
+        li
+        {
+            float: left;
+            border-right:1px solid black;
+        }
+        /*this rule is to set the border in the navigation bar*/
+        li:last-child{
+            border-right:none;
+        }
+        /* to display the hover color as blue and text color as white*/
+        li a:hover
+        {
+            color:white; 
+            background-color: blue;
+        }
+        h1
+        {
+            /*aligining the header 1 to center and setting the color to green*/
+            text-align: center;
+            text-transform: uppercase;
+            background-color: grey;
+        }
+        /*setting the style for paragraph*/
+        p
+        {
+            text-indent: 50px;
+            letter-spacing: 1px;
+            text-align: justify;
+            font-size: 20px;
+            font-style:normal;
+            font-family: 'Times New Roman';
+        }
+        li a
+        {
+            display:block;
+            text-align: center;
+            padding: 14px 14px;
+            text-decoration: none;
+        }
+        a{
+            text-decoration: none;
+            color: black;
+        }
+        table, td, th { /*the table can be used to display the education qualifications*/
+        border: 2px solid black;
+        }
+        table{
+        border-collapse: collapse;
+        width: 100px;
+        }
+        th{
+        height:50px;
+        vertical-align: bottom;
+        }
+        input[type=text]{
+            margin-top: -170px;
+            margin-right: 100px;
+            width:200px;
+            box-sizing: border-box;
+            border:2px red;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: white;
+            background-image: url("C:/Users/Ofelia/Desktop/Search.png");
+            background-position: 5px 10px;
+            background-repeat: no-repeat;
+            padding: 12px 20px 12px 40px;
+            transition: width 0.4s ease-in-out;
+        }
+        /* body {
+            /* background-image: url(Reimu.jpg);
+            background-repeat: none; 
+        }*/
+        /*style rule to add a card effect for articles*/
+        .card{
+            background-color: #bbb;
+            padding: 20px;
+            margin-top: 20px;
+        }
+        .leftcolumn{
+            float: left;
+            width: 75%;
+        }
+        .row:after{
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .img{
+            width:98%;
+            background-color: rgb(149, 194, 212);
+            padding: 10px;
+        }
+    </style>
+<body>
+    <ul>
+        <li> <a class = "active" href="#none">Home</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\qualifications.html">Qualifications</a> </li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\projects.html">Projects</a></li>
+             <li><a class = "active" href="C:\Users\Ofelia\Desktop\HTML\Website\aboutme.html">About me</a></li>
+    </ul>
+    <div>
+        <h1>Home</h1>
+        <p>Click the buttons above to navigate throughout the website</p>
+        <!-- <img src="C:\Users\Ofelia\Desktop\HTML\Website\Nitori.gif" alt="Reimu" style="float: right;" width = "512px" height = "512px">
+        <img src="C:\Users\Ofelia\Desktop\HTML\Website\ReimuFumo.jpg" width="512px" height="512px" usemap="#workmap"> -->
+    </div>
+    <map name="workmap">
+        <area shape="rect" coords="137,101,255,144" alt="go to next html page" href="C:\Users\Ofelia\Desktop\HTML\Website\qualifications.html">
+    </map>
+    <!-- <form>
+        <input style="float: right;" type="text" name="Search" placeholder="Search...">
+    </form> -->
+<div class="row">
+    <div class="leftcolumn">
+        <div class="card">
+            <h2>Website Development</h2>
+            <h5>Fall semester, October 2021</h5>
+            <div class="img" style="height: 200px;"><img src="C:\Users\Ofelia\Desktop\HTML\Website\Web.jpg"></div>
+                
+            <p>This portfolio website is made for Web Development class I</p>
+        </div>
+    </div>
+</div>    
+</body>
+</html>
