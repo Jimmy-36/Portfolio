@@ -1,0 +1,53 @@
+/* This rule is to set the navigation bar */
+ul
+{
+    list-style: none;
+    margin: 0%;
+    padding:0%;
+    overflow: hidden;
+    background-color: grey;
+}
+/* this rule defines the elements to align to left*/
+li
+{
+    float: left;
+    border-right:1px solid black;
+}
+/*this rule is to set the border in the navigation bar*/
+li:last-child{
+    border-right:none;
+}
+/* to display the hover color as blue and text color as white*/
+li a:hover
+{
+    color:white; 
+    background-color: blue;
+}
+li a
+{
+    display:block;
+    text-align: center;
+    padding: 14px 14px;
+    text-decoration: none;
+}
+body{
+    background-color: lightblue;
+}
+input[type="button"]
+{
+    background-color:orange;
+    color: white;
+    border: solid black 1px;
+    width: 45px;
+    height: 45px;
+    font-size: 25px;
+}
+input[type="text"]
+{
+    background-color:orange;
+    border: solid black 1px;
+    color: white;
+    width: 160px;
+    height: 50px;
+    font-size: 25px;
+}
